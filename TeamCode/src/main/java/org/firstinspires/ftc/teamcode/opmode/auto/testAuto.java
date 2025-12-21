@@ -10,7 +10,7 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
 import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 
-@Autonomous(name = "Test Auto")
+@Autonomous(name = "Test Auto")//hi
 public class testAuto extends OpMode {
     private final Pose startPose = new Pose(72.11861614497529, 47.92092257001649, Math.toRadians(90));
     private final Pose endPose = new Pose(72.35584843492586, 94.89291598023065, Math.toRadians(90));
