@@ -6,8 +6,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 public class Auto9 extends OpMode {
-    private DcMotor intake, outtake, anotherIntake;
-    private Servo gate1, gate2, gate3;
+    private DcMotor s1, s2;
+    private Servo t1, t2;
     @Override
     public void init() {
 

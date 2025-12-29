@@ -89,6 +89,7 @@ public class TurretTracker extends LinearOpMode {
 
             telemetry.addData("Limelight found target", foundTarget);
             telemetry.addData("Limelight ID:", limelight.getLatestResult());
+            telemetry.update();
 
         }
     }
