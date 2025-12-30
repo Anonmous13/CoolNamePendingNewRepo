@@ -36,38 +36,19 @@ public class TeleOpTurretBot extends OpMode {
         backLeft   = hardwareMap.get(DcMotor.class, "bl");
         backRight  = hardwareMap.get(DcMotor.class, "br");
 
-        // Shooter motors
-        s1 = hardwareMap.get(DcMotor.class, "s1");
-        s2 = hardwareMap.get(DcMotor.class, "s2");
 
-        // Turret CRServos
-        t1 = hardwareMap.get(CRServo.class, "t1");
-        t2 = hardwareMap.get(CRServo.class, "t2");
-
-        // Angle servo
-        angleServo = hardwareMap.get(CRServo.class, "as");
-
-        // Flinger servos
-        f1 = hardwareMap.get(Servo.class, "f1");
-        f2 = hardwareMap.get(Servo.class, "f2");
 
         // Motor directions
         frontLeft.setDirection(DcMotor.Direction.REVERSE);
         backLeft.setDirection(DcMotor.Direction.REVERSE);
-        s1.setDirection(DcMotor.Direction.REVERSE);
-        s2.setDirection(DcMotor.Direction.REVERSE);
+
 
         // Brake when stopped
         frontLeft.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         frontRight.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         backLeft.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         backRight.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        s1.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        s2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        // Start flingers DOWN
-        f1.setPosition(0.0);
-        f2.setPosition(0.0);
     }
 
     @Override
